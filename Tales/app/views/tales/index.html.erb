@@ -1,0 +1,13 @@
+<div class="large-8 columns">
+  <div class="row">
+    <% @tales.each do |tale| %>
+      <div class="large-4 small-6 columns">
+        <div class="panel">
+          <h5><%= link_to "#{tale.title}", tale %></h5>
+          <h6 class="subheader"><%= tale.author %></h6>
+          <p>¡Sé el primero en votar!</p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

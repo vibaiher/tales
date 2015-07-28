@@ -1,0 +1,13 @@
+<div class="tale">
+  <p id="notice"><%= notice %></p>
+
+  <h2>
+    "<%= @tale.title %>" por <i><%= @tale.author %></i>
+  </h2>
+
+  <%= raw(@tale.body) %>
+
+  <%= link_to 'Edit', edit_tale_path(@tale) %> |
+  <%= link_to 'Back', tales_path %>
+
+</div>
